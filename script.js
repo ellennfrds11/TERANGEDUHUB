@@ -33,9 +33,9 @@ const QUIZ = [
 ];
 
 const TEAM = [
-  { name: "Kukuh Muliasa", role: "Koordinator Desa" },
+  { name: "Kukuh Muliasa", role: "Koordinator Desa GIAT 16 Kelurahan Genuk" },
   { name: "Ellena Nayla Firdausi", role: "Penanggung Jawab Program" },
-  { name: "Dr. Barokah Isdaryanti, S.Pd., M.Pd", role: "DPL KKN Giat 16" }
+  { name: "Dr. Barokah Isdaryanti, S.Pd., M.Pd", role: "DPL KKN GIAT 16 Kelurahan Genuk" }
 ];
 
 /* ---------------- LOADER ---------------- */
