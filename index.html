@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TERANG EduHub — Terampil Mengelola Energi</title>
+<meta name="description" content="Media edukasi digital efisiensi penggunaan energi listrik bagi pelaku UMKM Kelurahan Genuk — Program KKN Giat 16 UNNES.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ METER LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <svg viewBox="0 0 120 120" width="72" height="72">
+    <circle cx="60" cy="60" r="52" fill="none" stroke="#F2B705" stroke-width="6" stroke-dasharray="30 300" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <a href="#home" class="brand">
+      <span class="brand__bolt">⚡</span>
+      <span class="brand__text">TERANG <em>EduHub</em></span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>Tentang</a>
+      <a href="#materi" data-nav>Materi</a>
+      <a href="#kalkulator" data-nav>Kalkulator</a>
+      <a href="#assessment" data-nav>Asesmen</a>
+      <a href="#quiz" data-nav>Kuis</a>
+      <a href="#sertifikat" data-nav>Sertifikat</a>
+      <a href="#download" data-nav>Unduhan</a>
+      <a href="#faq" data-nav>FAQ</a>
+      <a href="#kontak" data-nav>Kontak</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section id="home" class="hero">
+  <div class="hero__meter" aria-hidden="true">
+    <svg viewBox="0 0 300 180" class="meter-svg">
+      <path d="M20,160 A130,130 0 0,1 280,160" fill="none" stroke="#F4EEDB" stroke-width="18" stroke-linecap="round" opacity="0.25"/>
+      <path id="meterArcHero" d="M20,160 A130,130 0 0,1 280,160" fill="none" stroke="#F2B705" stroke-width="18" stroke-linecap="round" stroke-dasharray="408" stroke-dashoffset="90"/>
+      <line id="meterNeedleHero" x1="150" y1="160" x2="150" y2="55" stroke="#FBF7EC" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="150" cy="160" r="9" fill="#FBF7EC"/>
+    </svg>
+    <span class="hero__meter-label">kWh</span>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow">Program KKN Giat 16 · Universitas Negeri Semarang</p>
+    <h1>Belajar Hemat Energi,<br>Tingkatkan Efisiensi <span class="hl">UMKM</span></h1>
+    <p class="hero__lede">
+      TERANG EduHub merupakan media edukasi digital yang dikembangkan oleh mahasiswa KKN Giat 16
+      Universitas Negeri Semarang sebagai sarana pembelajaran mengenai efisiensi penggunaan energi
+      listrik bagi pelaku UMKM di Kelurahan Genuk. Materi edukasi, asesmen mandiri, kuis, serta media
+      pendukung dapat diakses kapan saja.
+    </p>
+    <div class="hero__cta">
+      <a href="#materi" class="btn btn--primary">📚 Mulai Belajar</a>
+      <a href="#about" class="btn btn--ghost">ℹ️ Tentang TERANG</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section section--dark">
+  <div class="section__head">
+    <p class="eyebrow eyebrow--light">Tentang TERANG</p>
+    <h2>Apa itu <span class="hl">TERANG</span>?</h2>
+    <p class="section__lede">
+      TERANG merupakan singkatan dari <strong>Terampil Mengelola Energi</strong>, yaitu program edukasi
+      yang bertujuan meningkatkan pengetahuan dan kesadaran pelaku UMKM mengenai penggunaan energi
+      listrik secara hemat, aman, dan efisien. Program ini dilaksanakan dalam rangka kegiatan KKN Giat 16
+      Universitas Negeri Semarang di Kelurahan Genuk.
+    </p>
+  </div>
+
+  <div class="about-grid">
+    <div class="paper-card">
+      <h3>Latar Belakang</h3>
+      <p>
+        Biaya listrik merupakan salah satu komponen pengeluaran operasional UMKM. Banyak pelaku usaha
+        belum menyadari bahwa penggunaan peralatan listrik yang kurang tepat dapat meningkatkan konsumsi
+        energi dan biaya operasional. Oleh karena itu, diperlukan media edukasi yang mudah dipahami agar
+        pelaku UMKM mampu menerapkan perilaku hemat energi dalam kegiatan usahanya.
+      </p>
+    </div>
+    <div class="paper-card">
+      <h3>Sasaran</h3>
+      <p>Ibu-ibu PKK yang merupakan pelaku UMKM di Kelurahan Genuk.</p>
+      <div class="badge-row">
+        <span class="chip">PKK Genuk</span>
+        <span class="chip">UMKM Rumahan</span>
+        <span class="chip">Warung &amp; Catering</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="goals">
+    <h3>Tujuan Program</h3>
+    <ul class="goals__list">
+      <li>Meningkatkan pemahaman mengenai efisiensi energi listrik.</li>
+      <li>Memberikan edukasi mengenai penggunaan peralatan listrik secara bijak.</li>
+      <li>Mengurangi pemborosan energi listrik pada UMKM.</li>
+      <li>Mendukung penghematan biaya operasional usaha.</li>
+      <li>Mendorong penggunaan energi yang lebih ramah lingkungan.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MATERI ============ -->
+<section id="materi" class="section">
+  <div class="section__head">
+    <p class="eyebrow">Materi Edukasi</p>
+    <h2>Lima Modul Belajar</h2>
+    <p class="section__lede">Ikuti modul secara berurutan — tiap modul membangun pemahaman untuk modul berikutnya.</p>
+  </div>
+
+  <div class="modules" id="modules">
+
+    <article class="module" data-icon="💡">
+      <div class="module__num">01</div>
+      <div class="module__body">
+        <h3>Mengenal Efisiensi Energi</h3>
+        <p>
+          Efisiensi energi adalah penggunaan energi secara optimal untuk memperoleh manfaat maksimal
+          dengan konsumsi energi seminimal mungkin. Dalam kegiatan usaha, efisiensi energi berarti
+          menggunakan listrik secara bijak tanpa mengurangi kualitas pelayanan maupun produktivitas usaha.
+        </p>
+        <h4>Manfaat</h4>
+        <ul>
+          <li>Menghemat biaya listrik.</li>
+          <li>Mengurangi pemborosan energi.</li>
+          <li>Memperpanjang umur peralatan listrik.</li>
+          <li>Mendukung pelestarian lingkungan.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="module" data-icon="🏪">
+      <div class="module__num">02</div>
+      <div class="module__body">
+        <h3>Mengapa UMKM Perlu Hemat Listrik?</h3>
+        <p>
+          Pengeluaran listrik merupakan salah satu biaya operasional usaha. Penggunaan energi secara
+          efisien akan membantu meningkatkan keuntungan karena biaya operasional menjadi lebih rendah.
+        </p>
+        <div class="example-strip">
+          <span class="example-strip__tag">Contoh</span>
+          <p>Jika sebuah warung menghemat penggunaan listrik sebesar Rp5.000 per hari, maka dalam satu
+          bulan penghematan dapat mencapai sekitar <strong>Rp150.000</strong>. Penghematan kecil yang
+          dilakukan secara konsisten dapat memberikan dampak yang signifikan bagi usaha.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="module module--wide" data-icon="🔌">
+      <div class="module__num">03</div>
+      <div class="module__body">
+        <h3>Peralatan Listrik pada UMKM</h3>
+        <div class="appliance-grid">
+          <div class="appliance-card">
+            <span class="appliance-card__icon">🍚</span>
+            <h4>Rice Cooker</h4>
+            <p class="appliance-card__fn">Memasak dan menghangatkan makanan.</p>
+            <ul>
+              <li>Matikan mode <em>warm</em> jika tidak diperlukan.</li>
+              <li>Bersihkan bagian pemanas secara berkala.</li>
+              <li>Gunakan sesuai kapasitas.</li>
+            </ul>
+          </div>
+          <div class="appliance-card">
+            <span class="appliance-card__icon">❄️</span>
+            <h4>Freezer</h4>
+            <ul>
+              <li>Jangan terlalu sering membuka pintu.</li>
+              <li>Bersihkan bunga es.</li>
+              <li>Atur suhu sesuai kebutuhan.</li>
+            </ul>
+          </div>
+          <div class="appliance-card">
+            <span class="appliance-card__icon">🧃</span>
+            <h4>Blender</h4>
+            <ul>
+              <li>Gunakan sesuai kapasitas.</li>
+              <li>Matikan setelah selesai.</li>
+              <li>Bersihkan secara rutin.</li>
+            </ul>
+          </div>
+          <div class="appliance-card">
+            <span class="appliance-card__icon">💡</span>
+            <h4>Lampu</h4>
+            <ul>
+              <li>Gunakan lampu LED.</li>
+              <li>Manfaatkan cahaya matahari.</li>
+              <li>Matikan lampu pada ruangan kosong.</li>
+            </ul>
+          </div>
+          <div class="appliance-card">
+            <span class="appliance-card__icon">💧</span>
+            <h4>Pompa Air</h4>
+            <ul>
+              <li>Periksa kebocoran instalasi air.</li>
+              <li>Gunakan tandon air.</li>
+              <li>Matikan pompa jika tidak digunakan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="module" data-icon="✅">
+      <div class="module__num">04</div>
+      <div class="module__body">
+        <h3>Tips Hemat Energi</h3>
+        <ul class="tick-list">
+          <li>Gunakan lampu LED karena lebih hemat dan memiliki umur pakai lebih lama dibandingkan lampu pijar.</li>
+          <li>Cabut charger setelah digunakan untuk menghindari konsumsi listrik yang tidak diperlukan.</li>
+          <li>Manfaatkan cahaya alami pada siang hari sehingga penggunaan lampu dapat dikurangi.</li>
+          <li>Gunakan peralatan listrik sesuai kebutuhan dan hindari menyalakan beberapa peralatan berdaya besar secara bersamaan.</li>
+          <li>Lakukan perawatan rutin terhadap peralatan listrik agar tetap bekerja secara optimal.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="module" data-icon="⚠️">
+      <div class="module__num">05</div>
+      <div class="module__body">
+        <h3>Keselamatan Penggunaan Listrik</h3>
+        <ul class="warn-list">
+          <li>Gunakan stop kontak sesuai kapasitas.</li>
+          <li>Hindari penggunaan terminal listrik bertumpuk.</li>
+          <li>Jangan menggunakan kabel yang terkelupas.</li>
+          <li>Pastikan tangan dalam keadaan kering saat menyentuh peralatan listrik.</li>
+          <li>Segera matikan MCB apabila terjadi korsleting.</li>
+          <li>Hubungi teknisi apabila terjadi kerusakan instalasi.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ KALKULATOR ENERGI ============ -->
+<section id="kalkulator" class="section">
+  <div class="section__head">
+    <p class="eyebrow">Kalkulator Digital</p>
+    <h2>Kalkulator Energi Listrik</h2>
+    <p class="section__lede">
+      Masukkan peralatan listrik yang digunakan di usaha Anda untuk memperkirakan konsumsi
+      dan biaya listrik harian, bulanan, hingga tahunan.
+    </p>
+  </div>
+
+  <div class="panel panel--paper calc-panel">
+    <div class="calc-tariff">
+      <label for="calcTariff">Tarif Listrik (Rp / kWh)</label>
+      <input type="number" id="calcTariff" value="1500" min="0" step="1">
+    </div>
+
+    <div class="calc-table-wrap">
+      <table class="calc-table" id="calcTable">
+        <thead>
+          <tr>
+            <th>Nama Alat</th>
+            <th>Daya (Watt)</th>
+            <th>Jumlah</th>
+            <th>Lama Pakai (jam/hari)</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="calcRows"></tbody>
+      </table>
+    </div>
+
+    <div class="calc-actions">
+      <button type="button" class="btn btn--ghost btn--ghost-alt" id="calcAddRow">➕ Tambah Alat</button>
+      <button type="button" class="btn btn--primary" id="calcCompute">⚡ Hitung Estimasi</button>
+    </div>
+
+    <div class="calc-result" id="calcResult" hidden>
+      <div class="calc-result__cards">
+        <div class="calc-card">
+          <span class="calc-card__label">Total Daya</span>
+          <span class="calc-card__value" id="calcTotalWatt">0</span>
+          <span class="calc-card__unit">Watt</span>
+        </div>
+        <div class="calc-card">
+          <span class="calc-card__label">Konsumsi / Hari</span>
+          <span class="calc-card__value" id="calcKwhDay">0</span>
+          <span class="calc-card__unit">kWh</span>
+        </div>
+        <div class="calc-card calc-card--accent">
+          <span class="calc-card__label">Biaya / Hari</span>
+          <span class="calc-card__value" id="calcCostDay">Rp0</span>
+        </div>
+        <div class="calc-card calc-card--accent">
+          <span class="calc-card__label">Biaya / Bulan</span>
+          <span class="calc-card__value" id="calcCostMonth">Rp0</span>
+        </div>
+        <div class="calc-card">
+          <span class="calc-card__label">Biaya / Tahun</span>
+          <span class="calc-card__value" id="calcCostYear">Rp0</span>
+        </div>
+      </div>
+
+      <div class="calc-breakdown">
+        <h4>Rincian per Alat</h4>
+        <table class="calc-table calc-table--result" id="calcBreakdownTable"></table>
+      </div>
+
+      <p class="calc-tip" id="calcTip"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELF ASSESSMENT ============ -->
+<section id="assessment" class="section section--dark">
+  <div class="section__head">
+    <p class="eyebrow eyebrow--light">Self Assessment</p>
+    <h2>Seberapa Hemat UMKM Anda?</h2>
+    <p class="section__lede">Jawablah pertanyaan berikut dengan jujur sesuai kebiasaan usaha Anda sehari-hari.</p>
+  </div>
+
+  <div class="panel">
+    <form id="assessmentForm" class="check-form"></form>
+    <button type="button" class="btn btn--primary" id="assessmentSubmit">Lihat Skor Saya</button>
+
+    <div class="result" id="assessmentResult" hidden>
+      <div class="result__meter">
+        <svg viewBox="0 0 300 180" class="meter-svg">
+          <path d="M20,160 A130,130 0 0,1 280,160" fill="none" stroke="#0A3B3F" stroke-width="18" stroke-linecap="round" opacity="0.35"/>
+          <path id="meterArcAssess" d="M20,160 A130,130 0 0,1 280,160" fill="none" stroke="#F2B705" stroke-width="18" stroke-linecap="round" stroke-dasharray="408" stroke-dashoffset="408"/>
+          <line id="meterNeedleAssess" x1="150" y1="160" x2="150" y2="55" stroke="#FBF7EC" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="150" cy="160" r="9" fill="#FBF7EC"/>
+        </svg>
+        <div class="result__score" id="assessmentScoreLabel">0</div>
+      </div>
+      <div class="result__text">
+        <p class="result__category" id="assessmentCategory">—</p>
+        <p class="result__reco" id="assessmentReco">—</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz" class="section">
+  <div class="section__head">
+    <p class="eyebrow">Uji Pemahaman</p>
+    <h2>Kuis TERANG</h2>
+    <p class="section__lede">10 soal pilihan ganda. Jawab minimal 80 poin untuk membuka sertifikat digital.</p>
+  </div>
+
+  <div class="panel panel--paper">
+    <div class="quiz__progress"><div class="quiz__progress-bar" id="quizProgress"></div></div>
+    <div id="quizContainer"></div>
+    <button type="button" class="btn btn--primary" id="quizSubmit">Kirim Jawaban</button>
+
+    <div class="result" id="quizResult" hidden>
+      <div class="result__meter">
+        <svg viewBox="0 0 300 180" class="meter-svg">
+          <path d="M20,160 A130,130 0 0,1 280,160" fill="none" stroke="#0A3B3F" stroke-width="18" stroke-linecap="round" opacity="0.2"/>
+          <path id="meterArcQuiz" d="M20,160 A130,130 0 0,1 280,160" fill="none" stroke="#E8552D" stroke-width="18" stroke-linecap="round" stroke-dasharray="408" stroke-dashoffset="408"/>
+          <line id="meterNeedleQuiz" x1="150" y1="160" x2="150" y2="55" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="150" cy="160" r="9" fill="#1B1B1B"/>
+        </svg>
+        <div class="result__score" id="quizScoreLabel">0</div>
+      </div>
+      <div class="result__text">
+        <p class="result__category" id="quizCategory">—</p>
+        <p class="result__reco" id="quizReco">—</p>
+        <a href="#sertifikat" class="btn btn--ghost" id="quizToCert">🎓 Menuju Sertifikat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERTIFIKAT ============ -->
+<section id="sertifikat" class="section section--dark">
+  <div class="section__head">
+    <p class="eyebrow eyebrow--light">Sertifikat Digital</p>
+    <h2>Ambil Sertifikat Anda</h2>
+    <p class="section__lede">Halaman ini terbuka setelah Anda memperoleh nilai kuis minimal 80.</p>
+  </div>
+
+  <div class="panel" id="certGate">
+    <p class="lock-msg" id="certLockMsg">🔒 Selesaikan kuis dengan nilai minimal 80 untuk membuka formulir sertifikat.</p>
+
+    <form id="certForm" class="cert-form" hidden>
+      <label>Nama Lengkap
+        <input type="text" id="certName" placeholder="cth. Sri Wahyuni" required>
+      </label>
+      <label>Asal / Instansi
+        <input type="text" id="certOrigin" placeholder="cth. PKK RW 03 Kelurahan Genuk" required>
+      </label>
+      <button type="submit" class="btn btn--primary">Buat Sertifikat</button>
+    </form>
+  </div>
+
+  <div class="cert-wrap" id="certWrap" hidden>
+    <canvas id="certCanvas" width="1200" height="850"></canvas>
+    <button class="btn btn--primary" id="certDownload">⬇️ Unduh Sertifikat (PNG)</button>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section id="download" class="section">
+  <div class="section__head">
+    <p class="eyebrow">Unduhan</p>
+    <h2>Media Pendukung</h2>
+    <p class="section__lede">Empat media cetak siap pakai untuk mendukung sosialisasi hemat energi di lapangan. Klik kartu untuk membuka pratinjau, lalu simpan sebagai PDF lewat dialog cetak browser.</p>
+  </div>
+
+  <div class="download-grid">
+
+    <button class="download-card" data-doc="booklet">
+      <div class="download-card__thumb">
+        <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="130" fill="#0F5257"/>
+          <path d="M0,0 L36,0 L0,36 Z" fill="#F2B705"/>
+          <rect x="18" y="52" width="90" height="7" rx="3" fill="#FBF7EC"/>
+          <rect x="18" y="66" width="60" height="6" rx="3" fill="#F2B705"/>
+          <circle cx="164" cy="40" r="22" fill="none" stroke="#F2B705" stroke-width="4"/>
+          <path d="M164,28 v12 l8,8" stroke="#F2B705" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <rect x="18" y="90" width="150" height="3" fill="#FBF7EC" opacity="0.35"/>
+          <rect x="18" y="100" width="120" height="3" fill="#FBF7EC" opacity="0.25"/>
+          <rect x="18" y="110" width="135" height="3" fill="#FBF7EC" opacity="0.25"/>
+        </svg>
+      </div>
+      <div class="download-card__body">
+        <span class="download-card__format">PDF · Ukuran Saku · 6 Halaman</span>
+        <h3>Buku Saku Hemat Energi</h3>
+        <p>Rangkuman lengkap kelima modul TERANG dalam format ringkas — cocok dibawa dan dibaca kapan saja.</p>
+        <ul class="download-card__meta">
+          <li>5 modul materi</li>
+          <li>Contoh perhitungan hemat</li>
+          <li>Cetak A6</li>
+        </ul>
+        <span class="download-card__cta">Lihat &amp; Cetak →</span>
+      </div>
+    </button>
+
+    <button class="download-card" data-doc="leaflet">
+      <div class="download-card__thumb">
+        <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="130" fill="#FBF7EC"/>
+          <rect x="0" y="0" width="66" height="130" fill="#E8552D"/>
+          <rect x="16" y="24" width="34" height="34" rx="4" fill="#FBF7EC"/>
+          <path d="M25,41 h16 M33,33 v16" stroke="#E8552D" stroke-width="3" stroke-linecap="round"/>
+          <rect x="16" y="72" width="34" height="6" rx="3" fill="#FBF7EC"/>
+          <rect x="16" y="84" width="24" height="5" rx="2.5" fill="#FBF7EC" opacity="0.7"/>
+          <rect x="82" y="20" width="102" height="8" rx="3" fill="#1B1B1B"/>
+          <rect x="82" y="38" width="80" height="4" fill="#1B1B1B" opacity="0.5"/>
+          <rect x="82" y="48" width="90" height="4" fill="#1B1B1B" opacity="0.5"/>
+          <rect x="82" y="58" width="70" height="4" fill="#1B1B1B" opacity="0.5"/>
+          <circle cx="96" cy="86" r="10" fill="#0F5257"/>
+          <text x="96" y="90" font-family="monospace" font-size="10" fill="#FBF7EC" text-anchor="middle">1</text>
+          <circle cx="128" cy="86" r="10" fill="#0F5257"/>
+          <text x="128" y="90" font-family="monospace" font-size="10" fill="#FBF7EC" text-anchor="middle">2</text>
+          <circle cx="160" cy="86" r="10" fill="#0F5257"/>
+          <text x="160" y="90" font-family="monospace" font-size="10" fill="#FBF7EC" text-anchor="middle">3</text>
+        </svg>
+      </div>
+      <div class="download-card__body">
+        <span class="download-card__format">PDF · Selebaran · 1 Halaman</span>
+        <h3>Leaflet Edukasi Efisiensi Energi</h3>
+        <p>Selebaran ringkas berisi alasan dan langkah awal hemat listrik — praktis dibagikan langsung ke pelaku UMKM.</p>
+        <ul class="download-card__meta">
+          <li>3 alasan hemat listrik</li>
+          <li>Langkah awal</li>
+          <li>Cetak A5</li>
+        </ul>
+        <span class="download-card__cta">Lihat &amp; Cetak →</span>
+      </div>
+    </button>
+
+    <button class="download-card" data-doc="poster">
+      <div class="download-card__thumb">
+        <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="130" fill="#F2B705"/>
+          <text x="100" y="90" font-family="Georgia, serif" font-weight="700" font-size="80" fill="#1B1B1B" text-anchor="middle" opacity="0.9">5</text>
+          <rect x="14" y="14" width="172" height="10" fill="#1B1B1B"/>
+          <rect x="14" y="106" width="172" height="10" fill="#1B1B1B"/>
+          <circle cx="30" cy="60" r="5" fill="#0F5257"/>
+          <circle cx="170" cy="60" r="5" fill="#E8552D"/>
+          <circle cx="45" cy="95" r="4" fill="#E8552D"/>
+          <circle cx="155" cy="95" r="4" fill="#0F5257"/>
+        </svg>
+      </div>
+      <div class="download-card__body">
+        <span class="download-card__format">PDF · Poster · A3</span>
+        <h3>Poster "5 Langkah Hemat Energi"</h3>
+        <p>Poster tempel dengan lima langkah utama hemat energi — dirancang untuk ditempel di warung dan tempat usaha.</p>
+        <ul class="download-card__meta">
+          <li>5 langkah utama</li>
+          <li>Teks besar &amp; jelas</li>
+          <li>Cetak A3</li>
+        </ul>
+        <span class="download-card__cta">Lihat &amp; Cetak →</span>
+      </div>
+    </button>
+
+    <button class="download-card" data-doc="checklist">
+      <div class="download-card__thumb">
+        <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="130" fill="#FBF7EC"/>
+          <rect x="55" y="8" width="90" height="114" rx="6" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3"/>
+          <rect x="80" y="2" width="40" height="14" rx="4" fill="#0F5257"/>
+          <g stroke="#0F5257" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="66" y="30" width="14" height="14" rx="3"/>
+            <path d="M69,37 l3,4 l7,-8"/>
+          </g>
+          <rect x="88" y="34" width="46" height="6" rx="3" fill="#1B1B1B" opacity="0.6"/>
+          <g stroke="#0F5257" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="66" y="58" width="14" height="14" rx="3"/>
+            <path d="M69,65 l3,4 l7,-8"/>
+          </g>
+          <rect x="88" y="62" width="40" height="6" rx="3" fill="#1B1B1B" opacity="0.6"/>
+          <rect x="66" y="86" width="14" height="14" rx="3" fill="none" stroke="#E8552D" stroke-width="3"/>
+          <rect x="88" y="90" width="44" height="6" rx="3" fill="#1B1B1B" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="download-card__body">
+        <span class="download-card__format">PDF · Tabel · 1 Halaman</span>
+        <h3>Checklist Hemat Energi Harian</h3>
+        <p>Daftar periksa 10 poin untuk dicentang setiap hari, membantu UMKM memantau kebiasaan hemat energinya sendiri.</p>
+        <ul class="download-card__meta">
+          <li>10 poin harian</li>
+          <li>Bisa diisi manual</li>
+          <li>Cetak A5</li>
+        </ul>
+        <span class="download-card__cta">Lihat &amp; Cetak →</span>
+      </div>
+    </button>
+
+  </div>
+</section>
+
+<!-- ============ TIPS ============ -->
+<section id="tips" class="section section--dark">
+  <div class="section__head">
+    <p class="eyebrow eyebrow--light">Tips Hemat Energi</p>
+    <h2>Sesuai Jenis Usaha Anda</h2>
+  </div>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <span class="tip-card__icon">🏪</span>
+      <h3>Untuk Warung</h3>
+      <ul>
+        <li>Gunakan lampu LED.</li>
+        <li>Matikan etalase berlampu saat toko tutup.</li>
+        <li>Bersihkan kulkas secara berkala.</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <span class="tip-card__icon">🍱</span>
+      <h3>Untuk Usaha Catering</h3>
+      <ul>
+        <li>Gunakan rice cooker sesuai kapasitas.</li>
+        <li>Matikan mode <em>warm</em> jika makanan sudah dipindahkan.</li>
+        <li>Atur jadwal memasak agar tidak berulang kali memanaskan makanan.</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <span class="tip-card__icon">🧃</span>
+      <h3>Untuk Penjual Minuman</h3>
+      <ul>
+        <li>Atur suhu freezer sesuai kebutuhan.</li>
+        <li>Hindari membuka pintu freezer terlalu sering.</li>
+        <li>Pastikan pintu freezer tertutup rapat.</li>
+      </ul>
+    </div>
+    <div class="tip-card">
+      <span class="tip-card__icon">🛒</span>
+      <h3>Untuk Toko Kelontong</h3>
+      <ul>
+        <li>Manfaatkan cahaya matahari pada siang hari.</li>
+        <li>Gunakan kipas angin seperlunya.</li>
+        <li>Rapikan instalasi listrik agar lebih aman.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="section">
+  <div class="section__head">
+    <p class="eyebrow">FAQ</p>
+    <h2>Pertanyaan yang Sering Diajukan</h2>
+  </div>
+
+  <div class="accordion" id="accordion">
+    <div class="accordion__item">
+      <button class="accordion__q">Apa itu efisiensi energi?
+        <span class="accordion__icon">＋</span></button>
+      <div class="accordion__a"><p>Efisiensi energi adalah penggunaan energi secara optimal untuk memperoleh manfaat maksimal dengan konsumsi energi seminimal mungkin.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__q">Mengapa UMKM perlu menghemat listrik?
+        <span class="accordion__icon">＋</span></button>
+      <div class="accordion__a"><p>Agar biaya operasional usaha dapat ditekan sehingga keuntungan usaha meningkat.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__q">Apakah lampu LED lebih hemat?
+        <span class="accordion__icon">＋</span></button>
+      <div class="accordion__a"><p>Ya. Lampu LED umumnya lebih hemat energi dan memiliki umur pakai yang lebih panjang dibandingkan lampu pijar.</p></div>
+    </div>
+    <div class="accordion__item">
+      <button class="accordion__q">Bagaimana cara memperoleh sertifikat?
+        <span class="accordion__icon">＋</span></button>
+      <div class="accordion__a"><p>Pelajari seluruh materi, selesaikan kuis, dan raih nilai minimal 80 untuk dapat mengunduh sertifikat digital.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIM PENGEMBANG ============ -->
+<section id="tim" class="section section--dark">
+  <div class="section__head">
+    <p class="eyebrow eyebrow--light">Tentang Pengembang</p>
+    <h2>Tim KKN Giat 16</h2>
+  </div>
+  <div class="team-grid" id="teamGrid"></div>
+</section>
+
+<!-- ============ KONTAK ============ -->
+<section id="kontak" class="section">
+  <div class="contact-box">
+    <div>
+      <p class="eyebrow">Kontak</p>
+      <h2>TERANG EduHub</h2>
+      <p>Program KKN Giat 16 · Universitas Negeri Semarang</p>
+      <p>Kelurahan Genuk, Kecamatan Ungaran Barat, Kabupaten Semarang</p>
+      <div class="contact-links">
+        <a href="mailto:kkngiat16.genuk@students.unnes.ac.id">📧 Email Kelompok KKN</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">📷 Instagram KKN Giat 16</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>⚡ TERANG EduHub — Terampil Mengelola Energi · KKN Giat 16 Universitas Negeri Semarang</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
